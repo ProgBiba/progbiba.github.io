@@ -63,7 +63,7 @@ function AppComponent_mat_option_9_Template(rf, ctx) { if (rf & 1) {
 } }
 function AppComponent_th_14_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Zoom ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " \u041F\u0440\u0438\u0446\u0435\u043B ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 function AppComponent_td_15_Template(rf, ctx) { if (rf & 1) {
@@ -216,7 +216,7 @@ class AppComponent {
             let tan3 = Math.tan((rd.FovMulti * newVerticalFov / 2) * Math.PI / 180);
             let tan4 = Math.tan((newVerticalFov / 2) * Math.PI / 180);
             let FovAdj = tan3 / tan4;
-            rd.newADS = Math.round(((rd.ADSMulti / FovAdj) * this.sensitivity) * 100) / 100;
+            rd.newADS = Math.round((rd.ADSMulti / FovAdj) * this.sensitivity);
         });
     }
 }
@@ -226,7 +226,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "mat-form-field", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "input", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_input_ngModelChange_4_listener($event) { return ctx.sensitivity = $event; })("focusout", function AppComponent_Template_input_focusout_4_listener() { return ctx.onUnfocus(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_input_ngModelChange_4_listener($event) { return ctx.sensitivity = $event; })("focusout", function AppComponent_Template_input_focusout_4_listener() { return ctx.onUnfocus(); })("ngModelChange", function AppComponent_Template_input_ngModelChange_4_listener() { return ctx.onUnfocus(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "mat-form-field", 3);
@@ -234,13 +234,13 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "\u0421\u043E\u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u0435 \u0441\u0442\u043E\u0440\u043E\u043D");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-select", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_mat_select_ngModelChange_8_listener($event) { return ctx.aspectRatio = $event; })("selectionChange", function AppComponent_Template_mat_select_selectionChange_8_listener() { return ctx.onUnfocus(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_mat_select_ngModelChange_8_listener($event) { return ctx.aspectRatio = $event; })("selectionChange", function AppComponent_Template_mat_select_selectionChange_8_listener() { return ctx.onUnfocus(); })("ngModelChange", function AppComponent_Template_mat_select_ngModelChange_8_listener() { return ctx.onUnfocus(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, AppComponent_mat_option_9_Template, 2, 2, "mat-option", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-form-field", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "input", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_input_ngModelChange_11_listener($event) { return ctx.angle = $event; })("focusout", function AppComponent_Template_input_focusout_11_listener() { return ctx.onUnfocus(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_input_ngModelChange_11_listener($event) { return ctx.angle = $event; })("focusout", function AppComponent_Template_input_focusout_11_listener() { return ctx.onUnfocus(); })("ngModelChange", function AppComponent_Template_input_ngModelChange_11_listener() { return ctx.onUnfocus(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

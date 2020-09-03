@@ -133,7 +133,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 18);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Zoom ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " \u041F\u0440\u0438\u0446\u0435\u043B ");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -401,7 +401,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var tan3 = Math.tan(rd.FovMulti * newVerticalFov / 2 * Math.PI / 180);
             var tan4 = Math.tan(newVerticalFov / 2 * Math.PI / 180);
             var FovAdj = tan3 / tan4;
-            rd.newADS = Math.round(rd.ADSMulti / FovAdj * _this.sensitivity * 100) / 100;
+            rd.newADS = Math.round(rd.ADSMulti / FovAdj * _this.sensitivity);
           });
         }
       }]);
@@ -433,6 +433,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return ctx.sensitivity = $event;
           })("focusout", function AppComponent_Template_input_focusout_4_listener() {
             return ctx.onUnfocus();
+          })("ngModelChange", function AppComponent_Template_input_ngModelChange_4_listener() {
+            return ctx.onUnfocus();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -453,6 +455,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             return ctx.aspectRatio = $event;
           })("selectionChange", function AppComponent_Template_mat_select_selectionChange_8_listener() {
             return ctx.onUnfocus();
+          })("ngModelChange", function AppComponent_Template_mat_select_ngModelChange_8_listener() {
+            return ctx.onUnfocus();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, AppComponent_mat_option_9_Template, 2, 2, "mat-option", 6);
@@ -468,6 +472,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function AppComponent_Template_input_ngModelChange_11_listener($event) {
             return ctx.angle = $event;
           })("focusout", function AppComponent_Template_input_focusout_11_listener() {
+            return ctx.onUnfocus();
+          })("ngModelChange", function AppComponent_Template_input_ngModelChange_11_listener() {
             return ctx.onUnfocus();
           });
 
